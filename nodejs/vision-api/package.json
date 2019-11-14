@@ -1,0 +1,17 @@
+{
+  "name": "cs-vision-bq",
+  "version": "1.0.0",
+  "description": "Cloud function that triggers on Cloud Storage Object creation and queries the Cloud Vision API. Results are stored in BQ.",
+  "main": "index.js",
+  "dependencies": {
+    "@google-cloud/bigquery": "^4.2.1",
+    "gaxios": "^2.0.1",
+    "google-auth-library": "^5.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Google Inc.",
+  "license": "ISC"
+}

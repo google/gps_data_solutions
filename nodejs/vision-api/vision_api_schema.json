@@ -1,0 +1,389 @@
+[
+    {
+        "name": "gcsPath",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gcsBucket",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gcsFile",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gcsCreated",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+        "name": "gcsUpdated",
+        "type": "STRING",
+        "mode": "NULLABLE"
+    },
+    {
+      "name": "faceAnnotations",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "detectionConfidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "landmarkingConfidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "joyLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "sorrowLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "angerLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "surpriseLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "underExposedLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "blurredLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "headwearLikelihood",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "landmarkAnnotations",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "mid",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "locale",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "description",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "score",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "confidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "topicality",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "locations",
+          "type": "RECORD",
+          "mode": "REPEATED",
+          "fields": [
+            {
+              "name": "latLng",
+              "type": "RECORD",
+              "mode": "NULLABLE",
+              "fields": [
+                {
+                  "name": "latitude",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "longitude",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "logoAnnotations",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "mid",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "locale",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "description",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "score",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "confidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "topicality",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "boundingPoly",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "vertices",
+              "type": "RECORD",
+              "mode": "REPEATED",
+              "fields": [
+                {
+                  "name": "y",
+                  "type": "INTEGER",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "x",
+                  "type": "INTEGER",
+                  "mode": "NULLABLE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "labelAnnotations",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "mid",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "locale",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "description",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "score",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "confidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "topicality",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "textAnnotations",
+      "type": "RECORD",
+      "mode": "REPEATED",
+      "fields": [
+        {
+          "name": "mid",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "locale",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "description",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "score",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "confidence",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "topicality",
+          "type": "FLOAT",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "boundingPoly",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "vertices",
+              "type": "RECORD",
+              "mode": "REPEATED",
+              "fields": [
+                {
+                  "name": "y",
+                  "type": "INTEGER",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "x",
+                  "type": "INTEGER",
+                  "mode": "NULLABLE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "safeSearchAnnotation",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "adult",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "spoof",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "medical",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "violence",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        },
+        {
+          "name": "racy",
+          "type": "STRING",
+          "mode": "NULLABLE"
+        }
+      ]
+    },
+    {
+      "name": "imagePropertiesAnnotation",
+      "type": "RECORD",
+      "mode": "NULLABLE",
+      "fields": [
+        {
+          "name": "dominantColors",
+          "type": "RECORD",
+          "mode": "NULLABLE",
+          "fields": [
+            {
+              "name": "colors",
+              "type": "RECORD",
+              "mode": "REPEATED",
+              "fields": [
+                {
+                  "name": "color",
+                  "type": "RECORD",
+                  "mode": "NULLABLE",
+                  "fields": [
+                    {
+                      "name": "red",
+                      "type": "INTEGER",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "green",
+                      "type": "INTEGER",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "blue",
+                      "type": "INTEGER",
+                      "mode": "NULLABLE"
+                    },
+                    {
+                      "name": "alpha",
+                      "type": "INTEGER",
+                      "mode": "NULLABLE"
+                    }
+                  ]
+                },
+                {
+                  "name": "score",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                },
+                {
+                  "name": "pixelFraction",
+                  "type": "FLOAT",
+                  "mode": "NULLABLE"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
