@@ -6,7 +6,7 @@ Function          | Description  | Language
 ----------------- | ------------ | ------------------
 [Vision API](vision_api/) | Send files to the Cloud Vision API | NodeJS
 [Split File](split_file/) | Split GCS stored file into smaller chuncks | Go
-[BQ to GCS](bg_to_gcs/) | Export BQ table to Cloud Storage | Go
+[BQ to GCS](bq_to_gcs/) | Export BQ table to Cloud Storage | Go
 
 # Vision API
 This cloud function triggers on new objects stored on Google Cloud Storage. Each file will be send to the Cloud Vision API to extract some data. The Vision API results are stored in BigQuery. The following settings can be configured by setting environment variables:
